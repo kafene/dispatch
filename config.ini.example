@@ -1,0 +1,14 @@
+; if present, this path will be stripped from the
+; request URI before they are routed. this is useful
+; if you don't have mod_rewrite enabled and use request
+; paths of the format /index.php/controller/action
+; or if you're dispatch app lives in a sub-directory
+routing.base = 'mysite/index.php'
+
+; rendering vars
+views.root = views
+views.layout = layout
+
+; session vars
+cookies.secret = mary-had-a-little-lamb
+cookies.flash = _F
